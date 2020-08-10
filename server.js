@@ -9,6 +9,4 @@ app.get("/", function (req, res) {
   res.render("index")
 })
 
-app.listen(port, function () {
-  console.log("app running")
-})
+app.listen(port)
