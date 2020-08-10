@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex-wrapper {
+  display: flex;
+  min-height: 80vh;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* ARTICLE ASIDE LAYOUT */
+#main {
+  display: flex;
+  flex: 1;
+}
+
+.white {
+  color: #fff;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-outline:hover {
+  opacity: 0.8;
+}
+
+.blue {
+  background: #000080;
+  color: #fff;
+  padding: 1rem;
+  margin: 10px 0;
+}
+
+.page-title {
+  margin: 1.2rem 0;
+}
+
+/* MARGINS  */
+.mb-2 {
+  margin-bottom: 20px;
+}
+
+/* SIDEBAR */
+#sidebar {
+  margin-left: 2rem;
+}
+
+#sidebar h3 {
+  margin-bottom: 20px;
+}
+
+header {
+  padding: 1.6rem 0;
+  background-color: #000080;
+}
+
+header .header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  font-size: 1.4rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+#navbar a {
+  margin-left: 35px;
+  /* color: #8f9193; */
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.logo .highlight,
+#navbar a.current {
+  color: #ff0000;
+}
+
+#navbar a:hover {
+  color: #ff0000;
+}
+
+p {
+  opacity: 0.8;
+}
+
+/* SHOWCASE */
+#showcase {
+  background: url("../img/showcase.jpg") no-repeat center left / cover;
+  min-height: 400px;
+  text-align: center;
+}
+
+.showcase-inner {
+  display: flex;
+  flex-direction: column;
+  min-height: 400px;
+  justify-content: center;
+}
+
+#showcase h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.25rem;
+}
+
+#showcase p {
+  font-size: 1.2rem;
+}
+
+/* NEWSLETTER */
+#newsletter {
+  padding: 2rem 1rem;
+  background: #000;
+}
+
+#newsletter-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#newsletter form input[type="email"] {
+  width: 250px;
+  /* border: 0; */
+  padding: 0.5rem;
+}
+
+#newsletter form input[type="submit"] {
+  margin-left: 15px;
+}
+
+/* BOXES */
+#boxes {
+  margin: 2rem 0;
+}
+
+#boxes-inner {
+  display: flex;
+  text-align: center;
+}
+
+#boxes .box {
+  padding: 1rem;
+}
+
+#boxes .box img {
+  width: 90px;
+}
+
+#boxes .box h3 {
+  margin: 15px 0;
+}
+
+/* ABOUT */
+#main #main-col .about-img {
+  background: url("../img/about.jpg") no-repeat center center / cover;
+  height: 250px;
+}
+
+/* SERVICES */
+.service {
+  background: #e6e6e6;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+/* SERVICE CARDS */
+.service h3,
+.service p {
+  margin-bottom: 20px;
+}
+
+.service p:nth-child(3) {
+  margin-bottom: 0;
+}
+
+.service h3 {
+  opacity: 0.5;
+}
+
+aside#sidebar form label,
+aside#sidebar form .btn-outline {
+  display: block;
+}
+
+.quote div {
+  margin-bottom: 10px;
+}
+
+aside#sidebar .quote input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 0;
+}
+
+aside#sidebar .quote textarea {
+  padding: 0.5rem;
+  height: 100px;
+}
+
+aside#sidebar form .btn-outline {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* FOOTER */
+footer {
+  background: #000080;
+  color: #fff;
+  text-align: center;
+  padding: 3rem;
+  /* font-size: 0.8rem; */
+}
+
+footer .social {
+  margin: 0 0 20px 0;
+}
+
+footer .social i {
+  padding: 10px;
+  color: #fff;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 900px) {
+  #newsletter {
+    padding: 1.5rem 1rem;
+  }
+
+  #newsletter-inner {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #newsletter-inner h3 {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 1rem;
+  }
+
+  header .header-inner {
+    flex-direction: column;
+  }
+
+  .logo {
+    margin-bottom: 5px;
+  }
+
+  #newsletter form input[type="email"] {
+    width: 150px;
+  }
+
+  #boxes-inner {
+    flex-direction: column;
+  }
+
+  /* ARTICLE - ASIDE LAYOUT */
+  #main {
+    flex-direction: column;
+  }
+
+  #sidebar {
+    margin-left: 0;
+  }
+
+  /* SERVICES */
+  aside#sidebar .quote textarea {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  #newsletter form input[type="email"] {
+    width: 250px;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  #newsletter form input[type="submit"] {
+    margin-left: 0;
+    display: block;
+    width: 100%;
+  }
+
+  #navbar a {
+    margin-left: 15px;
+  }
+}
