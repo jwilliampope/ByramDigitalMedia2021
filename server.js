@@ -1,7 +1,7 @@
-let express = require("express")
-let app = express()
+const express = require("express")
+const app = express()
 
-let port = process.env.PORT || 8080
+const port = process.env.PORT || 8080
 
 app.use(express.static(__dirname))
 
