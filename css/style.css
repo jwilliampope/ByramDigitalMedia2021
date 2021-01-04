@@ -123,6 +123,8 @@ p {
   min-height: 300px;
   text-align: center;
   color: #fff;
+  border-bottom: 2px #fff solid;
+  border-top: 2px #fff solid;
 }
 
 .showcase-inner {
@@ -146,6 +148,7 @@ p {
 #newsletter {
   padding: 2rem 1rem;
   background: #000;
+  border-bottom: 2px #ff0000 solid;
 }
 
 #newsletter-inner {
@@ -245,7 +248,7 @@ footer {
   color: #fff;
   text-align: center;
   padding: 3rem;
-  /* font-size: 0.8rem; */
+  border-top: 2px solid #ff0000;
 }
 
 footer .social {
